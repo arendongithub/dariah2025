@@ -25,6 +25,8 @@
             color: white !important;
         }
         .hsubsection {
+            font-size: 1.8em;
+            line-height: 1.2;
             margin: 30px 0 0;
             text-align: center;
             font-size: 70px;
@@ -137,25 +139,27 @@ SECTION Slide - Challenge
     </section>
 
     <section class="slide">
-        <img class="cover width" src="https://assets.rubenshuis.be/styles/portrait/public/2024-04/ans_brys_20181216_K4A8194.jpg">
+        <figure>
+            <img class="cover width" src="https://assets.rubenshuis.be/styles/portrait/public/2024-04/ans_brys_20181216_K4A8194.jpg">
+        </figure>
     </section>
 
     <section class="slide">
-        <iframe class="cover" src="http://flowpaper.com/flipbook/https://arendongithub.github.io/dariah2025/resources/achilles-series-part-1.pdf" width="100%" height="100%" style="border: none;" allowFullScreen></iframe>
+        <iframe class="cover" src="./resources/achilles-series-part-1.pdf" width="100%" height="100%" style="border: none;" allowFullScreen></iframe>
     </section>
 
+<!--
     <section class="slide">
         <h2><mark>Corpus Rubenianum</mark></h2>
         <figure>
             <img class="cover width" src="./img/rub-1.png" alt="">
         </figure>
     </section>
+-->
 
     <section class="slide">
-        <h2 class="hsubsection">How can structured data be extracted from unstructured text?</h2>
+        <h2 class="hsubsection">How can <mark>structured</mark> data be extracted from unstructured text?</h2>
         <p style="font-size: 1.8em;"></p>
-        <figure>
-        </figure>
         <style>
             #cover h2 {
                 margin: 30px 0 0;
@@ -175,6 +179,11 @@ SECTION Slide - Challenge
         </style>
     </section>
 
+    <section class="slide">
+        <iframe src="https://ai4culture.eu/" style="border: none;" allowFullScreen width="100%" height="100%"></iframe>
+    </section>
+    
+
 <!--
 #####
 Slide - From unstructured to structured information
@@ -185,7 +194,7 @@ Slide - From unstructured to structured information
         <h2>From unstructured to structured information</h2>
         <ul>
             <li><strong><mark>Corpus</mark></strong>: THE ACHILLES SERIES (<i>Corpus Rubenianum</i> X)</li>
-            <li><strong><mark>What we tried</mark></strong>: LLM-powered extraction of structured (json) information from pdf files</li>
+            <li><strong><mark>What we did</mark></strong>: LLM-powered extraction of structured (json) information from pdf files</li>
             <li><strong><mark>Purpose</mark></strong>: provide useful research data</li>
             <li><strong><mark>Technology used</mark></strong>: LlamaParse, LlamaIndex, Pydantic, Cohere LLM API</li>
         </ul>
@@ -213,15 +222,15 @@ SECTION Slide - Corpus
         <h2>The Achilles Series</h2>
         <div class="columns three">
             <div>
-                <p>Oil Sketch</p>
+                <p><strong>Oil Sketch</strong></p>
                 <img src="./img/rub-11.jpg" width="100%">
             </div>
             <div>
-                <p>Modello</p>
+                <p><strong>Modello</strong></p>
                 <img src="./img/rub-10.jpeg" width="100%">
             </div>
             <div>
-                <p>Tapestry</p>
+                <p><strong>Tapestry</strong></p>
                 <img src="./img/rub-9.jpeg" width="100%">
             </div>
         </div>
@@ -375,7 +384,7 @@ SECTION Slide - Process
         <div class="columns two" style="margin-top: -60px">
             <div>
                 <h2 style="font-size: 0.8em">pdf</h2>
-                <iframe src="./resources/achilles-series-part-1.pdf" frameborder=0 width="100%" height="100%"></iframe>
+                <iframe src="./resources/achilles-series-part-1.pdf" style="border: none;" allowFullScreen width="100%" height="100%"></iframe>
             </div>
             <div>
                 <h2 style="font-size: 0.8em">json</h2>
@@ -387,12 +396,16 @@ SECTION Slide - Process
     <section class="slide">
         <div class="columns two" style="margin-top: -60px">
             <div>
-                <h2 style="font-size: 0.8em">pdf</h2>
-                <img src="./img/rub-22.png" width="100%">
+                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <pre style="font-size: 0.4em; line-height: 1.2;">
+                    # Copies<br><br>
+
+                    (1) Painting (without the enframement), Philadelphia, The Philadelphia Museum of Art, Inv. No. W. 0 2 -1-10; panel, 35.5 x 90 cm.; prov.: ? Ghent, Thomas Loridon de Ghellinck, sale, Ghent, 3 September 1821 et seqq., lot 15; Paris, Abbé Gosselin; Paris, Charles Sedelmeyer, 1902; Philadelphia, W. P. Wilstach, since 1902;lit.: Catalogue d'une... collection de tableaux.., le Cabinet de Monsieur T. Loridon de Ghellinck... à Gand, Ghent, n. d. [c. 1780], pp. 139, 140, No. 403; W. R. Valentiner, Gemälde des Rubens in Amerika, Zeitschrift für bildende Kunst, xlviii, 1911-12, pp. 264, 265, 271 (as a school repetition); "W. R. Valentiner, The Art of the Low Countries, Studies, Garden City-New York, 1914, pp. 188, 189, 236, No. 28; [M. W. Brockwell and A. E. Bye], Catalogue of the W. P. Wilflach Collection, Memorial Hall, Philadelphia, 1922, pp. 107—109, No. 269; Goris-Held, p. 53, No. A 77; [H. G. Gardiner], Checklift of Paintings in the Philadelphia Museum of Art, Philadelphia, 1965, p. 60;(2) Painting (without the enframement), 18th century, Göttingen, Kunstsammlung der Universität; copper, 40.5 x 54.5 cm.; prov.: J. W. Zschorn, bequeathed to the University in 1795 (as Rubens); lit.: J.F. Fiorillo, [Cat. of the Collection], Göttingen, 1805, No. 33 (as Van Dyck oder vielmehr Diepenbeeck); E. Waldmann, [Cat. of the Collection], Göttingen, 1905, No. 33 (as imitator of Rubens); W. Stechow, Katalog der Gemäldesammlung der Universität Göttingen, Göttingen, 1926, No. 151 (as copy);(3) Painting (without the enframement), Upper Hartfield, Sussex, Donald A. Lander;(4) Painting, whereabouts unknown; canvas, 47 x 60 cm.; prov.: Rome, Palazzo Barberini, 1798; Paris, J.-P. Collot, sale, Paris (Drouot), 29 March 1855, lot 20, No. 3 (as Rubens); lit.: Collot, 1832, pp. 19-24 (as Rubens); C. Blanc, Le trésor de la curiosité, 11, Paris, 1857, p. 508; Rooses, m, pp. 42, 43, No. 559bls;(5) Painting, ? Santa Barbara, private collection, 1959; copper, 36 x 50.5 cm.; prov.: ? London, T. Berry;(6) Etching bynFranz Ertinger, 1679 (Fig. 27; V S ., p. 217, N o. 15, 3); (7) Etching by Bernard Baron, 1724 (Fig. 28; V S ., p. 218 , under N o. 16 ).
+                </pre>
             </div>
-            <div>
+            <div class="next">
                 <h2 style="font-size: 0.8em">json</h2>
-                <img src="./img/rub-17.png" width="100%">
+                <img src="./img/rub-17.png" width="110%">
             </div>
         </div>
     </section>
@@ -654,36 +667,21 @@ SECTION Slide - Valorizing results - First steps
     </section>
 
     <section class="slide" id="cover" style="background-color: darkcyan;">
-        <h2>Valorizing results - First steps</h2>
-        <p style="font-size: 1.8em;"></p>
-        <figure>
-        </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                text-align: center;
-                font-size: 70px;
-            }
-
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                font-style: italic;
-                font-size: 20px;
-            }
-
-            #cover p a {
-            }
-        </style>
+        <h2 class="hsection">Valorizing results<br><span style="font-size: 1.8em;">First steps</span></h2>
     </section>
 
 
     <section class="slide">
-        <h2>Data enrichment (bbliographic data)</h2>
+        <h2 class="hsubsection">Data enrichment (bbliographic data)</h2>
     </section>
 
     <section class="slide">
-        <iframe class="cover" width="100%" height="100%" src="https://research.rkd.nl/nl/detail/https%3A%2F%2Fdata.rkd.nl%2Fimages%2F5008?image=1" frameborder="0"></iframe>
+        <h2>RKD - Netherlands Institute for Art History</h2>
+        <img class="cover height" src="./img/rub-26.png">
+    </section>
+
+    <section class="slide">
+        <img class="cover height" src="./img/rub-27.png">
     </section>
 
     <section class="slide">
@@ -696,7 +694,7 @@ SECTION Slide - Valorizing results - First steps
 
     <section class="slide">
         <h2>Provenances Network</h2>
-        <iframe class="cover" width="100%" height="100%" src="./resources/provenance_graph.html" width="100%" height="70%" frameborder="1"></iframe>
+        <iframe class="cover" width="100%" height="100%" src="./resources/provenance_graph.html" style="border: none;" allowFullScreen></iframe>
     </section>
 
     <section class="slide">
@@ -708,7 +706,7 @@ SECTION Slide - Valorizing results - First steps
 
     <section class="slide">
         <h2>Provenances Timeline</h2>
-        <iframe class="cover" width="100%" height="100%" src="./resources/tl.html" width="100%" height="70%" frameborder="1"></iframe>
+        <iframe class="cover" width="100%" height="100%" src="./resources/tl.html" width="100%" height="70%" style="border: none;" allowFullScreen></iframe>
     </section>
 
     <section class="slide">
@@ -723,6 +721,30 @@ SECTION Slide - Valorizing results - First steps
 
     <section class="slide">
         <h2>Public engagement</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Object detection</h2>
+        <img src="./img/rub-28.png" width="90%">
+        <div id="dino" class="overbox">
+                <h2 style="font-size: 0.9em;">Input</h2>
+                <p>
+                    Recognize "Cerberus, the three-headed watchdog of the underworld, depicted with one head sleeping, one watching, and one barking."
+                </p>
+                <h2 style="font-size: 0.9em;">Output</h2>
+                <p>
+                    Coordinates of bounding box of the detected object.
+                </p>
+            </ul>
+        </div>
+        <style type="text/css">
+            #dino {
+                top: 200px;
+                left: 575px;
+                width: 400px;
+                height: 350px;
+            }
+        </style>    
     </section>
 
     <section class="slide">
