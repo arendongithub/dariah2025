@@ -25,8 +25,8 @@
             color: white !important;
         }
         .hsubsection {
-            font-size: 1.8em;
-            line-height: 1.2;
+            font-size: 1.8em !important;
+            line-height: 1.2 !important;
             margin: 30px 0 0;
             text-align: center;
             font-size: 70px;
@@ -55,7 +55,7 @@ Slide - Splash
         <p>DARIAH 2025 - 20 June 2025</p>
         <h2 style="font-size: 0.8em">Arnoud Wils - <i>The Plant</i> - Maastricht University</h2>
         <figure>
-            <img class="cover width" src="./img/RUB000077.jpg" alt="">
+            <img class="cover width" src="./img/rub-0.jpg" alt="">
         </figure>
         <style>
             #cover h2 {
@@ -180,7 +180,9 @@ SECTION Slide - Challenge
     </section>
 
     <section class="slide">
-        <iframe src="https://ai4culture.eu/" style="border: none;" allowFullScreen width="100%" height="100%"></iframe>
+        <figure>
+            <img class="cover" src="./img/rub-29.png"></img>
+        </figure>
     </section>
     
 
@@ -413,8 +415,12 @@ SECTION Slide - Process
     <section class="slide">
         <div class="columns two">
             <div>
-                <h2 style="font-size: 0.8em">pdf</h2>
-                <img src="./img/rub-23.png" width="100%">
+                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <pre style="font-size: 0.6em; line-height: 1.2;">
+                    # Provenance:<br><br>
+
+                    <mark>Daniel Fourment</mark>, <mark>Antwerp</mark>, until June <mark>16 43</mark>; ? Jean-Henry Gobelinus, Brussels, until July 16 81; Joan Baptista Anthoine, Antwerp, until March 16 91; Richard Mead, by 1724, until 1754; Fulk Greville, until 179 4; John Smith-Barry, Marbury Hall, Northwich, Cheshire, by 18 14; A.H, Smith-Barry; Lord Barrymore, sale, London (Sotheby’s), 21 June 19 33, lot 28 (repr.); Goudstikker, Amsterdam; presented by D.G. van Beuningen to the Museum, 1933.
+                </pre>
             </div>
             <div>
                 <h2 style="font-size: 0.8em">json</h2>
@@ -426,12 +432,16 @@ SECTION Slide - Process
     <section class="slide">
         <div class="columns two">
             <div>
-                <h2 style="font-size: 0.8em">pdf</h2>
-                <img src="./img/rub-24.png" width="100%">
+                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <pre style="font-size: 0.5em; line-height: 1.2;">
+                    <mark>Thetis</mark>, as a nymph herself immortal, knew that her son was vulnerable since he was the child of a mortal father, Peleus, king of the Myrmidons. She therefore attempted to make him immortal, according to some by treating him with fire, according to others by immersing him in the Styx, the river of the underworld. In the latter case she made him invulnerable except in the heel by which she held him, or according to other legends, except for the soles of his feet.
+                    <br>    
+                    Rubens has represented Thetis standing on the rocky border of the river, in the gloom of the underworld, “penchée sur le Styx où elle trampe galamment le petit héros quelle tient par le talon”. One of the three Fates (probably <mark>Lachesis</mark>, who assigns to man his doom), holding a distaff, assists Thetis by dispelling the darkness with a torch. In the background <mark>Charon</mark> conveys the dead across the Styx. Fiery flames emerge from behind the hills in the distance.
+                </pre>
             </div>
             <div>
                 <h2 style="font-size: 0.8em">json</h2>
-                <img src="./img/rub-19.png" width="100%">
+                <img src="./img/rub-19.png" width="110%">
             </div>
         </div>
     </section>
@@ -439,12 +449,15 @@ SECTION Slide - Process
     <section class="slide">
         <div class="columns two">
             <div>
-                <h2 style="font-size: 0.8em">pdf</h2>
-                <img src="./img/rub-25.png" width="100%">
+                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <iframe src="./resources/achilles-series-bibliography-part-1.pdf" style="border: none;" allowFullScreen width="100%" height="50%"></iframe>
+                <pre style="font-size: 0.6em; line-height: 1.2;">
+                    Smith, Catalogue Raisonné, il, pp. 250, 251, No. 849 (from the etchings by Ertinger and Baron); Van Hasselt, p. 290, No. 641; Hannema, 1933, p. 3, repr.; Pantheon, xi, 1933, p. 199; <mark>Burchard, 1930, pp. 13-15</mark>, No. 12;
+                </pre>
             </div>
             <div>
                 <h2 style="font-size: 0.8em">json</h2>
-                <img src="./img/rub-21.png" width="100%">
+                <img src="./img/rub-21.png" width="120%">
             </div>
         </div>
     </section>
@@ -667,7 +680,7 @@ SECTION Slide - Valorizing results - First steps
     </section>
 
     <section class="slide" id="cover" style="background-color: darkcyan;">
-        <h2 class="hsection">Valorizing results<br><span style="font-size: 1.8em;">First steps</span></h2>
+        <h2 class="hsection">Valorizing results<br><span style="font-size: 0.8em;">First steps</span></h2>
     </section>
 
 
@@ -733,7 +746,7 @@ SECTION Slide - Valorizing results - First steps
                 </p>
                 <h2 style="font-size: 0.9em;">Output</h2>
                 <p>
-                    Coordinates of bounding box of the detected object.
+                    Coordinates of bounding box of the detected object (top_left_x, top_left_y, bottom_right_x, bottom_right_y).
                 </p>
             </ul>
         </div>
