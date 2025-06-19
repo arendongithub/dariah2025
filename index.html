@@ -59,7 +59,7 @@ Slide - Splash
         </figure>
         <style>
             #cover h2 {
-                margiIntroductory n: 30px 0 0;
+                margin: 30px 0 0;
                 color: white;
                 text-align: center;
                 font-size: 70px;
@@ -184,6 +184,21 @@ SECTION Slide - Challenge
             <img class="cover" src="./img/rub-29.png"></img>
         </figure>
     </section>
+
+    <section class="slide">
+        <h2>The Project</h2>
+        <ul>
+            <li>
+                Rubenshuis Antwerp (https://rubenshuis.be/)
+            </li>
+            <li>
+                Digital Humanities @ KU Leuven
+            </li>
+            <li>
+                ./datable (https://www.datable.be/)
+            </li>
+        </ul>
+    </section>
     
 
 <!--
@@ -250,7 +265,7 @@ SECTION Slide - Process
     <section class="slide">
         <h2>Step 1 - Parse the PDF document</h2>
         <img src="./img/rub-12.png" width="90%">
-        <div id="llamaparse" class="overbox">
+        <div id="llamaparse" class="overbox next">
             <ul style="margin-left: 20px;">
                 <h2 style="font-size: 0.9em;">LlamaParse instruction</h2>
                 <li>
@@ -279,12 +294,12 @@ SECTION Slide - Process
         <div class="columns two">
             <div>
                 <ul>
-                    <li>LlamaParse is</li>
+                    <li>LlamaParse is ...</li>
                 </ul>
             </div>
-            <div style="overflow:auto;width:auto;padding:.2em .6em; font-size: 0.6em;">
+            <div style="overflow:auto;width:auto;padding:.2em .6em; font-size: 0.6em;" class="next">
               <pre style="margin: 0; line-height: 1.4">
-                    <span style="color: #408080; font-style: italic">#Initialize LlamaParse parser</span>
+                    <span style="color: #408080; font-style: italic">#Initialize LlamaParse parser</span><br>
                                 parser 
                     <span style="color: #666666">=</span> LlamaParse(<br>
                     <div class="tab">
@@ -314,150 +329,34 @@ SECTION Slide - Process
         <h2 style="margin-top: -40px">LlamaParse</h2>
         <div class="columns two" style="margin-top: -60px">
             <div>
-                <p>from pdf</p>
+                <h2 style="font-size: 0.8em">from pdf</h2>
                 <img src="./img/rub-15.png" width="100%">
             </div>
             <div class="next">
-                <p>to markdown</p>
-                <div style="font-size: 0.4em; line-height: 1.0;">
+                <h2 style="font-size: 0.8em">json</h2>
+                <div style="font-size: 0.5em; line-height: 1.2;">
                     <pre>
-                    <span style="color: blue; font-weight: bold;"># 2 a. A C H I LLES INSTRUC TED B Y C H IRO N: OIL SK ETC H (F igS. 13 , 15)</span><br><br>
+                    <span style="color: blue; font-weight: bold;"># 2a. Achilles Instructed by Chiron: Oil Sketch (Figs. 13 , 15)</span><br><br>
 
-                    O il on panel; 43 : 36.5 cm. - Verso: the brands (Fig. 9 1) o f Antwerp (two hands partly visible) and the panel maker Michiel Vriendt (m v).<br><br>
+                    Oil on panel; 43 : 36.5 cm. - Verso: the brands (Fig. 9 1) o f Antwerp (two hands partly visible) and the panel maker Michiel Vriendt (m v).<br><br>
 
                     Rotterdam, Museum Boymans-van Beuningen. Inv. N o. 1760a.<br><br>
 
-                    <span style="color: blue; font-weight: bold;"># Provenance</span><br><br>
+                    <span style="color: blue; font-weight: bold;"><mark># Provenance</mark></span><br><br>
 
-                    D aniel Fourment, Antwerp, until June 16 43; ? Jean-H enry Gobelinus, Brussels, until Ju ly 16 8 1; Joan Baptifta Anthoine, Antwerp, until March 16 9 1; Richard Mead, by 1724, until 1754; Fulk Greville, until 179 4; John Smith-Barry, Marbury H all, Northwich, Cheshire, by  18 14; A.H. Smith-Barry; Lord Barrymore, sale, London (Sotheby’s), 21 June 1933, lot 29 (repr.); Goudstikker, Amsterdam; presented by D.G. van Beuningen to the Museum, 1933.<br><br>
+                    D aniel Fourment, Antwerp, until June 16 43; ? Jean-Henry Gobelinus, Brussels, until Ju ly 16 8 1; Joan Baptifta Anthoine, Antwerp, until March 16 9 1; Richard Mead, by 1724, until 1754; Fulk Greville, until 179 4; John Smith-Barry, Marbury H all, Northwich, Cheshire, by  18 14; A.H. Smith-Barry; Lord Barrymore, sale, London (Sotheby’s), 21 June 1933, lot 29 (repr.); Goudstikker, Amsterdam; presented by D.G. van Beuningen to the Museum, 1933.<br><br>
 
-                    <span style="color: blue; font-weight: bold;"># Copies</span><br><br>
+                    <span style="color: blue; font-weight: bold;"><mark># Copies</mark></span><br><br>
 
                     (1) Painting, whereabouts unknown; canvas, 46 : 40 cm.; prov.: Rome, Palazzo Barberini, 179 8; J.-P. Collot, sale, Paris (D rouot), 29 March 1855, lot 20, N o. 2 (as Rubens), purchased by Thibaudeau; lit.: Collot, 1832, pp. 13 -18 (as Rubens); C. Blanc, Le trésor de la curiosité, 11, Paris, 1857, p. 508; Rooses, n i, pp. 42, 43, N o. 558bls;<br><br>
 
                     (2) Painting, whereabouts unknown; canvas, 45.5 : 36.5 cm.; prov.: sale “ Colonel Wyat t Turnor and others” (anonymous sedtion), London, 4 December 19 31, lot 34, purchased by T ho m; (...)<br><br>
 
-                    <span style="color: blue; font-weight: bold;"># Exhibited</span><br><br>
+                    <span style="color: blue; font-weight: bold;"><mark># Exhibited</mark></span><br><br>
 
                     Manchester, 1837, N o. 559 (provisional catalogue, N o. 567); Dublin, 1872, N o. 134; London, 1879, N o. 16 0; London, 1899-7900, N o. 112; London, 7909-7970, N o. 19; London, 19x2, N o. 3; Ashmolean Museum, O xford, 19 33; Amsterdam, 1933, N o. 19 (repr.); Rotterdam, 19 33-34 , N o. 62; Braunschweig, 1936, N o. 2 (repr.).
                     <pre>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <h2>LlamaParse</h2>
-        <div class="columns two">
-            <div>
-                <ul>
-                    <li>LlamaParse is</li>
-                </ul>
-            </div>
-            <div style="overflow:auto;width:auto;padding:.2em .6em; font-size: 0.6em;">
-              <pre style="margin: 0; line-height: 1.4">
-                    <span style="color: #408080; font-style: italic">#Initialize LlamaParse parser</span>
-                                parser 
-                    <span style="color: #666666">=</span> LlamaParse(<br>
-                    <div class="tab">
-                                    language
-                    <span style="color: #666666">=</span>
-                    <span style="color: #BA2121">&quot;en&quot;</span>,<br>
-                                    result_type
-                    <span style="color: #666666">=</span>
-                    <span style="color: #BA2121"><mark>&quot;markdown&quot;</mark></span>,<br>
-                                    system_prompt_append
-                    <span style="color: #666666">=</span>
-                    <span style="color: #BA2121">&quot;&quot;&quot;</span>
-                    <span style="color: #BA2121">                        You are parsing an art catalogue.</span>
-                    <span style="color: #BA2121">                        The catalogue is structured into sections, each discussing one work of art.</span>
-                    <span style="color: #BA2121">                        Each section may contain subsections such as &#39;Literature&#39;, &#39;Copy&#39; or &#39;Copies&#39;, and &#39;Provenance&#39;.</span>
-                    <span style="color: #BA2121">                        Identify these subsections and assign them the appropriate heading.</span>
-                    <span style="color: #BA2121">                        &quot;&quot;&quot;</span><br>
-                    </div>
-                                )
-
-                </pre>
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="columns two" style="margin-top: -60px">
-            <div>
-                <h2 style="font-size: 0.8em">pdf</h2>
-                <iframe src="./resources/achilles-series-part-1.pdf" style="border: none;" allowFullScreen width="100%" height="100%"></iframe>
-            </div>
-            <div>
-                <h2 style="font-size: 0.8em">json</h2>
-                <img src="./img/rub-20.png" width="80%">
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="columns two" style="margin-top: -60px">
-            <div>
-                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
-                <pre style="font-size: 0.4em; line-height: 1.2;">
-                    # Copies<br><br>
-
-                    (1) Painting (without the enframement), Philadelphia, The Philadelphia Museum of Art, Inv. No. W. 0 2 -1-10; panel, 35.5 x 90 cm.; prov.: ? Ghent, Thomas Loridon de Ghellinck, sale, Ghent, 3 September 1821 et seqq., lot 15; Paris, Abbé Gosselin; Paris, Charles Sedelmeyer, 1902; Philadelphia, W. P. Wilstach, since 1902;lit.: Catalogue d'une... collection de tableaux.., le Cabinet de Monsieur T. Loridon de Ghellinck... à Gand, Ghent, n. d. [c. 1780], pp. 139, 140, No. 403; W. R. Valentiner, Gemälde des Rubens in Amerika, Zeitschrift für bildende Kunst, xlviii, 1911-12, pp. 264, 265, 271 (as a school repetition); "W. R. Valentiner, The Art of the Low Countries, Studies, Garden City-New York, 1914, pp. 188, 189, 236, No. 28; [M. W. Brockwell and A. E. Bye], Catalogue of the W. P. Wilflach Collection, Memorial Hall, Philadelphia, 1922, pp. 107—109, No. 269; Goris-Held, p. 53, No. A 77; [H. G. Gardiner], Checklift of Paintings in the Philadelphia Museum of Art, Philadelphia, 1965, p. 60;(2) Painting (without the enframement), 18th century, Göttingen, Kunstsammlung der Universität; copper, 40.5 x 54.5 cm.; prov.: J. W. Zschorn, bequeathed to the University in 1795 (as Rubens); lit.: J.F. Fiorillo, [Cat. of the Collection], Göttingen, 1805, No. 33 (as Van Dyck oder vielmehr Diepenbeeck); E. Waldmann, [Cat. of the Collection], Göttingen, 1905, No. 33 (as imitator of Rubens); W. Stechow, Katalog der Gemäldesammlung der Universität Göttingen, Göttingen, 1926, No. 151 (as copy);(3) Painting (without the enframement), Upper Hartfield, Sussex, Donald A. Lander;(4) Painting, whereabouts unknown; canvas, 47 x 60 cm.; prov.: Rome, Palazzo Barberini, 1798; Paris, J.-P. Collot, sale, Paris (Drouot), 29 March 1855, lot 20, No. 3 (as Rubens); lit.: Collot, 1832, pp. 19-24 (as Rubens); C. Blanc, Le trésor de la curiosité, 11, Paris, 1857, p. 508; Rooses, m, pp. 42, 43, No. 559bls;(5) Painting, ? Santa Barbara, private collection, 1959; copper, 36 x 50.5 cm.; prov.: ? London, T. Berry;(6) Etching bynFranz Ertinger, 1679 (Fig. 27; V S ., p. 217, N o. 15, 3); (7) Etching by Bernard Baron, 1724 (Fig. 28; V S ., p. 218 , under N o. 16 ).
-                </pre>
-            </div>
-            <div class="next">
-                <h2 style="font-size: 0.8em">json</h2>
-                <img src="./img/rub-17.png" width="110%">
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="columns two">
-            <div>
-                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
-                <pre style="font-size: 0.6em; line-height: 1.2;">
-                    # Provenance:<br><br>
-
-                    <mark>Daniel Fourment</mark>, <mark>Antwerp</mark>, until June <mark>16 43</mark>; ? Jean-Henry Gobelinus, Brussels, until July 16 81; Joan Baptista Anthoine, Antwerp, until March 16 91; Richard Mead, by 1724, until 1754; Fulk Greville, until 179 4; John Smith-Barry, Marbury Hall, Northwich, Cheshire, by 18 14; A.H, Smith-Barry; Lord Barrymore, sale, London (Sotheby’s), 21 June 19 33, lot 28 (repr.); Goudstikker, Amsterdam; presented by D.G. van Beuningen to the Museum, 1933.
-                </pre>
-            </div>
-            <div>
-                <h2 style="font-size: 0.8em">json</h2>
-                <img src="./img/rub-18.png" width="100%">
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="columns two">
-            <div>
-                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
-                <pre style="font-size: 0.5em; line-height: 1.2;">
-                    <mark>Thetis</mark>, as a nymph herself immortal, knew that her son was vulnerable since he was the child of a mortal father, Peleus, king of the Myrmidons. She therefore attempted to make him immortal, according to some by treating him with fire, according to others by immersing him in the Styx, the river of the underworld. In the latter case she made him invulnerable except in the heel by which she held him, or according to other legends, except for the soles of his feet.
-                    <br>    
-                    Rubens has represented Thetis standing on the rocky border of the river, in the gloom of the underworld, “penchée sur le Styx où elle trampe galamment le petit héros quelle tient par le talon”. One of the three Fates (probably <mark>Lachesis</mark>, who assigns to man his doom), holding a distaff, assists Thetis by dispelling the darkness with a torch. In the background <mark>Charon</mark> conveys the dead across the Styx. Fiery flames emerge from behind the hills in the distance.
-                </pre>
-            </div>
-            <div>
-                <h2 style="font-size: 0.8em">json</h2>
-                <img src="./img/rub-19.png" width="110%">
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div class="columns two">
-            <div>
-                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
-                <iframe src="./resources/achilles-series-bibliography-part-1.pdf" style="border: none;" allowFullScreen width="100%" height="50%"></iframe>
-                <pre style="font-size: 0.6em; line-height: 1.2;">
-                    Smith, Catalogue Raisonné, il, pp. 250, 251, No. 849 (from the etchings by Ertinger and Baron); Van Hasselt, p. 290, No. 641; Hannema, 1933, p. 3, repr.; Pantheon, xi, 1933, p. 199; <mark>Burchard, 1930, pp. 13-15</mark>, No. 12;
-                </pre>
-            </div>
-            <div>
-                <h2 style="font-size: 0.8em">json</h2>
-                <img src="./img/rub-21.png" width="120%">
             </div>
         </div>
     </section>
@@ -475,7 +374,7 @@ SECTION Slide - Process
     <section class="slide">
         <h2>Step 2 - Define the data schema</h2>
         <img src="./img/rub-13.png" width="90%">
-        <div id="pydantic" class="overbox">
+        <div id="pydantic" class="overbox next">
             <ul style="margin-left: 20px;">
                 <h2 style="font-size: 0.9em;">Pydantic data objects</h2>
                 <li>
@@ -496,10 +395,10 @@ SECTION Slide - Process
         </div>
         <style type="text/css">
             #pydantic {
-                top: 200px;
+                top: 150px;
                 left: 575px;
                 width: 400px;
-                height: 350px;
+                height: 400px;
             }
         </style>
     </section>
@@ -565,12 +464,7 @@ SECTION Slide - Process
     <section class="slide">
         <h2>Step 3 - Extract and validate data</h2>
         <img src="./img/rub-14.png" width="90%">
-    </section>
-
-    <section class="slide">
-        <h2>Step 3 - Extract and validate data</h2>
-        <img src="./img/rub-14.png" width="90%">
-        <div id="llm" class="overbox">
+        <div id="llm" class="overbox next">
             <ul style="margin-left: 20px;">
                 <h2 style="font-size: 0.9em;">LLM inference</h2>
                 <p>prompt:</p>
@@ -587,10 +481,10 @@ SECTION Slide - Process
         </div>
         <style type="text/css">
             #llm {
-                top: 200px;
+                top: 150px;
                 left: 575px;
                 width: 400px;
-                height: 350px;
+                height: 250px;
             }
         </style>    
     </section>
@@ -616,9 +510,87 @@ SECTION Slide - Process
             </div>
     </section>
 
+    <section class="slide">
+        <div class="columns two" style="margin-top: -60px">
+            <div>
+                <h2 style="font-size: 0.8em">pdf</h2>
+                <iframe src="./resources/achilles-series-part-1.pdf" style="border: none;" allowFullScreen width="100%" height="100%"></iframe>
+            </div>
+            <div class="next">
+                <h2 style="font-size: 0.8em">json</h2>
+                <img src="./img/rub-20.png" width="110%">
+            </div>
+        </div>
+    </section>
 
+    <section class="slide">
+        <div class="columns two" style="margin-top: -60px">
+            <div>
+                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <pre style="font-size: 0.4em; line-height: 1.2;">
+                    # Copies<br><br>
 
+                    (1) <mark>Painting (without the enframement), Philadelphia</mark>, The Philadelphia Museum of Art, Inv. No. W. 0 2 -1-10; panel, 35.5 x 90 cm.; prov.: ? Ghent, Thomas Loridon de Ghellinck, sale, Ghent, 3 September 1821 et seqq., lot 15; Paris, Abbé Gosselin; Paris, Charles Sedelmeyer, 1902; Philadelphia, W. P. Wilstach, since 1902;lit.: Catalogue d'une... collection de tableaux.., le Cabinet de Monsieur T. Loridon de Ghellinck... à Gand, Ghent, n. d. [c. 1780], pp. 139, 140, No. 403; W. R. Valentiner, Gemälde des Rubens in Amerika, Zeitschrift für bildende Kunst, xlviii, 1911-12, pp. 264, 265, 271 (as a school repetition); "W. R. Valentiner, The Art of the Low Countries, Studies, Garden City-New York, 1914, pp. 188, 189, 236, No. 28; [M. W. Brockwell and A. E. Bye], Catalogue of the W. P. Wilflach Collection, Memorial Hall, Philadelphia, 1922, pp. 107—109, No. 269; Goris-Held, p. 53, No. A 77; [H. G. Gardiner], Checklift of Paintings in the Philadelphia Museum of Art, Philadelphia, 1965, p. 60;(2) <mark>Painting (without the enframement), 18th century, Göttingen</mark>, Kunstsammlung der Universität; copper, 40.5 x 54.5 cm.; prov.: J. W. Zschorn, bequeathed to the University in 1795 (as Rubens); lit.: J.F. Fiorillo, [Cat. of the Collection], Göttingen, 1805, No. 33 (as Van Dyck oder vielmehr Diepenbeeck); E. Waldmann, [Cat. of the Collection], Göttingen, 1905, No. 33 (as imitator of Rubens); W. Stechow, Katalog der Gemäldesammlung der Universität Göttingen, Göttingen, 1926, No. 151 (as copy);(3) Painting (without the enframement), Upper Hartfield, Sussex, Donald A. Lander;(4) Painting, whereabouts unknown; canvas, 47 x 60 cm.; prov.: Rome, Palazzo Barberini, 1798; Paris, J.-P. Collot, sale, Paris (Drouot), 29 March 1855, lot 20, No. 3 (as Rubens); lit.: Collot, 1832, pp. 19-24 (as Rubens); C. Blanc, Le trésor de la curiosité, 11, Paris, 1857, p. 508; Rooses, m, pp. 42, 43, No. 559bls;(5) Painting, ? Santa Barbara, private collection, 1959; copper, 36 x 50.5 cm.; prov.: ? London, T. Berry;(6) Etching bynFranz Ertinger, 1679 (Fig. 27; V S ., p. 217, N o. 15, 3); (7) Etching by Bernard Baron, 1724 (Fig. 28; V S ., p. 218 , under N o. 16 ).
+                </pre>
+            </div>
+            <div class="next">
+                <h2 style="font-size: 0.8em">json</h2>
+                <img src="./img/rub-17.png" width="120%">
+            </div>
+        </div>
+    </section>
 
+    <section class="slide">
+        <div class="columns two">
+            <div>
+                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <pre style="font-size: 0.6em; line-height: 1.2;">
+                    # Provenance:<br><br>
+
+                    <mark>Daniel Fourment</mark>, <mark>Antwerp</mark>, until June <mark>16 43</mark>; ? Jean-Henry Gobelinus, Brussels, until July 16 81; Joan Baptista Anthoine, Antwerp, until March 16 91; Richard Mead, by 1724, until 1754; Fulk Greville, until 179 4; John Smith-Barry, Marbury Hall, Northwich, Cheshire, by 18 14; A.H, Smith-Barry; Lord Barrymore, sale, London (Sotheby’s), 21 June 19 33, lot 28 (repr.); Goudstikker, Amsterdam; presented by D.G. van Beuningen to the Museum, 1933.
+                </pre>
+            </div>
+            <div>
+                <h2 style="font-size: 0.8em">json</h2>
+                <img src="./img/rub-18.png" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="columns two">
+            <div>
+                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <pre style="font-size: 0.5em; line-height: 1.2;">
+                    <mark>Thetis</mark>, as a nymph herself immortal, knew that her son was vulnerable since he was the child of a mortal father, Peleus, king of the Myrmidons. She therefore attempted to make him immortal, according to some by treating him with fire, according to others by immersing him in the Styx, the river of the underworld. In the latter case she made him invulnerable except in the heel by which she held him, or according to other legends, except for the soles of his feet.
+                    <br>    
+                    Rubens has represented Thetis standing on the rocky border of the river, in the gloom of the underworld, “penchée sur le Styx où elle trampe galamment le petit héros quelle tient par le talon”. One of the three Fates (probably <mark>Lachesis</mark>, who assigns to man his doom), holding a distaff, assists Thetis by dispelling the darkness with a torch. In the background <mark>Charon</mark> conveys the dead across the Styx. Fiery flames emerge from behind the hills in the distance.
+                </pre>
+            </div>
+            <div>
+                <h2 style="font-size: 0.8em">json</h2>
+                <img src="./img/rub-19.png" width="110%">
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="columns two">
+            <div>
+                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <iframe src="./resources/achilles-series-bibliography-part-1.pdf" style="border: none;" allowFullScreen width="100%" height="50%"></iframe>
+                <pre style="font-size: 0.6em; line-height: 1.2;">
+                    Smith, Catalogue Raisonné, il, pp. 250, 251, No. 849 (from the etchings by Ertinger and Baron); Van Hasselt, p. 290, No. 641; Hannema, 1933, p. 3, repr.; Pantheon, xi, 1933, p. 199; <mark>Burchard, 1930, pp. 13-15</mark>, No. 12;
+                </pre>
+            </div>
+            <div>
+                <h2 style="font-size: 0.8em">json</h2>
+                <img src="./img/rub-21.png" width="120%">
+            </div>
+        </div>
+    </section>
+
+<!--
     <section class="slide">
         <h2>Provenances</h2>
         <ul>
@@ -667,6 +639,7 @@ SECTION Slide - Process
             <img class="cover place right" src="./img/rub-3.png" alt="">
         </figure>
     </section>
+-->
 
 <!--
 #####
@@ -676,7 +649,7 @@ SECTION Slide - Valorizing results - First steps
 
 
     <section class="slide">
-        <h2>So what?</h2>
+        <h2>What's next?</h2>
     </section>
 
     <section class="slide" id="cover" style="background-color: darkcyan;">
@@ -685,11 +658,10 @@ SECTION Slide - Valorizing results - First steps
 
 
     <section class="slide">
-        <h2 class="hsubsection">Data enrichment (bbliographic data)</h2>
+        <h2 class="hsubsection">Data enrichment</h2>
     </section>
 
     <section class="slide">
-        <h2>RKD - Netherlands Institute for Art History</h2>
         <img class="cover height" src="./img/rub-26.png">
     </section>
 
@@ -698,16 +670,7 @@ SECTION Slide - Valorizing results - First steps
     </section>
 
     <section class="slide">
-        <h2>From data to research question</h2>
-        <ul>
-            <li>provenances network analysis</li>
-            <li>provenances timeline</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Provenances Network</h2>
-        <iframe class="cover" width="100%" height="100%" src="./resources/provenance_graph.html" style="border: none;" allowFullScreen></iframe>
+        <h2>Data triggering research questions</h2>
     </section>
 
     <section class="slide">
@@ -723,23 +686,18 @@ SECTION Slide - Valorizing results - First steps
     </section>
 
     <section class="slide">
-        <h2 style="margin-top: -50px;">Object Detection with Multimodal LLM</h2>
-        <ul>
-            <li>using multimodal zero-shot object detection</li>
-            <li><mark>input</mark>: image + structured character description</li>
-            <li><mark>output</mark>: bounding box</li>
-            <li><mark>model</mark>: Grounding DINO (Open-Set Object Detection)</li>
-        </ul>
+        <h2>Provenances Network</h2>
+        <iframe class="cover" width="100%" height="100%" src="./resources/provenance_graph.html" style="border: none;" allowFullScreen></iframe>
     </section>
 
     <section class="slide">
-        <h2>Public engagement</h2>
+        <h2 class="hsubsection">Public engagement</h2>
     </section>
 
     <section class="slide">
         <h2>Object detection</h2>
         <img src="./img/rub-28.png" width="90%">
-        <div id="dino" class="overbox">
+        <div id="dino" class="overbox next">
                 <h2 style="font-size: 0.9em;">Input</h2>
                 <p>
                     Recognize "Cerberus, the three-headed watchdog of the underworld, depicted with one head sleeping, one watching, and one barking."
@@ -752,16 +710,16 @@ SECTION Slide - Valorizing results - First steps
         </div>
         <style type="text/css">
             #dino {
-                top: 200px;
+                top: 100px;
                 left: 575px;
                 width: 400px;
-                height: 350px;
+                height: 500px;
             }
         </style>    
     </section>
 
     <section class="slide">
-        <h2 style="margin-top: -50px;">Object Detection<br>with Multimodal LLM</h2>
+        <h2 style="margin-top: -80px; line-height: 1.0;">Object Detection<br>with Multimodal LLM</h2>
         <figure>
             <img class="cover width" src="./img/rub-8.png" alt="">
         </figure>
@@ -836,6 +794,11 @@ SECTION Slide - Valorizing results - First steps
             <li>investigating <mark>valorization</mark> options: timeline, network graph, keyword extraction</li>
             <li>testing and fine-tuning <mark>object detection</mark> using parsed structured iconographic data</li>
         </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Thank you</h2>
+        <p>arnoud.wils@.maastrichtuniversity.nl</p>
     </section>
 
     <div class="progress"></div>
