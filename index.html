@@ -27,7 +27,7 @@
         .hsubsection {
             font-size: 1.8em !important;
             line-height: 1.2 !important;
-            margin: 30px 0 0;
+            margin: 200px 0 0 !important;
             text-align: center;
             font-size: 70px;
             color: darkcyan !important;
@@ -184,21 +184,6 @@ SECTION Slide - Challenge
             <img class="cover" src="./img/rub-29.png"></img>
         </figure>
     </section>
-
-    <section class="slide">
-        <h2>The Project</h2>
-        <ul>
-            <li>
-                Rubenshuis Antwerp (https://rubenshuis.be/)
-            </li>
-            <li>
-                Digital Humanities @ KU Leuven
-            </li>
-            <li>
-                ./datable (https://www.datable.be/)
-            </li>
-        </ul>
-    </section>
     
 
 <!--
@@ -210,7 +195,7 @@ Slide - From unstructured to structured information
     <section class="slide">
         <h2>From unstructured to structured information</h2>
         <ul>
-            <li><strong><mark>Corpus</mark></strong>: THE ACHILLES SERIES (<i>Corpus Rubenianum</i> X)</li>
+            <li><strong><mark>Corpus</mark></strong>: The <strong>Achilles Series</strong> (<i>Corpus Rubenianum</i> X)</li>
             <li><strong><mark>What we did</mark></strong>: LLM-powered extraction of structured (json) information from pdf files</li>
             <li><strong><mark>Purpose</mark></strong>: provide useful research data</li>
             <li><strong><mark>Technology used</mark></strong>: LlamaParse, LlamaIndex, Pydantic, Cohere LLM API</li>
@@ -229,7 +214,13 @@ SECTION Slide - Corpus
     <section class="slide">
         <h2>The Achilles Series</h2>
         <ul>
-            <li>eight oil sketches, eight modelli, and the tapestries for which Rubens painted them</li>
+            <li>including:
+                <ul>
+                    <li>eight <mark>oil</mark> sketches</li>
+                    <li>eight <mark>modelli</mark></li>
+                    <li>and the <mark>tapestries</mark> for which Rubens painted them</li>                
+                </ul>
+            </li>
             <li>1630-1635</li>
             <li>represented the life of the Greek hero from early youth to death in eight episodes</li>
         </ul>
@@ -294,7 +285,8 @@ SECTION Slide - Process
         <div class="columns two">
             <div>
                 <ul>
-                    <li>LlamaParse is ...</li>
+                    <li><strong><mark>LlamaParse</mark></strong> is a powerful document parsing service that can extract data from complex documents.</li>
+                    <li>It uses OCR and the Llama LLM, which was released by Meta.</li>
                 </ul>
             </div>
             <div style="overflow:auto;width:auto;padding:.2em .6em; font-size: 0.6em;" class="next">
@@ -368,7 +360,7 @@ SECTION Slide - Process
 
     <section class="slide">
         <h2>Step 2 - Define the data schema</h2>
-        <p>Pydantic is ...</p>
+        <p><strong><mark>Pydantic</mark></strong> is the most widely used data validation library for Python.</p>
     </section>
 
     <section class="slide">
@@ -376,19 +368,19 @@ SECTION Slide - Process
         <img src="./img/rub-13.png" width="90%">
         <div id="pydantic" class="overbox next">
             <ul style="margin-left: 20px;">
-                <h2 style="font-size: 0.9em;">Pydantic data objects</h2>
+                <h2 style="font-size: 0.9em;">Pydantic data schema</h2>
                 <li>
-                    [Art Catalogue] = list of [Artworks]
+                    <strong>[Art Catalogue]</strong> = list of <strong>[Artworks]</strong>
                 </li>
                 <li>
                     An [Artwork] has properties:
                     <ul>
-                        <li>title</li>
-                        <li>type</li>
-                        <li>a list of [provenances]</li>
-                        <li>a list of [copies]</li>
-                        <li>a list of [literature]</li>
-                        <li>a list of [characters] depicted on the artwork</li>
+                        <li><strong>title</strong></li>
+                        <li><strong>type</strong></li>
+                        <li>a list of <strong>[provenances]</strong></li>
+                        <li>a list of <strong>[copies]</strong></li>
+                        <li>a list of <strong>[literature]</strong></li>
+                        <li>a list of <strong>[characters]</strong> depicted on the artwork</li>
                     </ul>
                 </li>
             </ul>
@@ -467,15 +459,15 @@ SECTION Slide - Process
         <div id="llm" class="overbox next">
             <ul style="margin-left: 20px;">
                 <h2 style="font-size: 0.9em;">LLM inference</h2>
-                <p>prompt:</p>
+                <p><i>prompt:</i></p>
                 <li>
-                    Extract data from Markdown text
+                    <strong>Extract data</strong> from Markdown text
                 </li>
                 <li>
-                    Adhere strictly to the data schema
+                    <strong>Adhere</strong> strictly to the <strong>data schema</strong>
                 </li>
                 <li>
-                    Output to json file
+                    <strong>Output</strong> to <strong>json</strong> file
                 </li>
             </ul>
         </div>
@@ -524,9 +516,16 @@ SECTION Slide - Process
     </section>
 
     <section class="slide">
+        <h2>Copies [pdf]</h2>
+        <figure>
+            <img src="./img/rub-22.png" width="100%">
+        </figure>
+    </section>
+
+    <section class="slide">
         <div class="columns two" style="margin-top: -60px">
             <div>
-                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <h2 style="font-size: 0.8em">[markdown] (from pdf)</h2>
                 <pre style="font-size: 0.4em; line-height: 1.2;">
                     # Copies<br><br>
 
@@ -534,112 +533,82 @@ SECTION Slide - Process
                 </pre>
             </div>
             <div class="next">
-                <h2 style="font-size: 0.8em">json</h2>
+                <h2 style="font-size: 0.8em">[json]</h2>
                 <img src="./img/rub-17.png" width="120%">
             </div>
         </div>
     </section>
 
     <section class="slide">
-        <div class="columns two">
-            <div>
-                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
-                <pre style="font-size: 0.6em; line-height: 1.2;">
-                    # Provenance:<br><br>
-
-                    <mark>Daniel Fourment</mark>, <mark>Antwerp</mark>, until June <mark>16 43</mark>; ? Jean-Henry Gobelinus, Brussels, until July 16 81; Joan Baptista Anthoine, Antwerp, until March 16 91; Richard Mead, by 1724, until 1754; Fulk Greville, until 179 4; John Smith-Barry, Marbury Hall, Northwich, Cheshire, by 18 14; A.H, Smith-Barry; Lord Barrymore, sale, London (Sotheby’s), 21 June 19 33, lot 28 (repr.); Goudstikker, Amsterdam; presented by D.G. van Beuningen to the Museum, 1933.
-                </pre>
-            </div>
-            <div>
-                <h2 style="font-size: 0.8em">json</h2>
-                <img src="./img/rub-18.png" width="100%">
-            </div>
-        </div>
+        <h2>Provenance [pdf]</h2>
+        <figure>
+            <img src="./img/rub-23.png" width="100%">
+        </figure>
     </section>
 
     <section class="slide">
         <div class="columns two">
             <div>
-                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <h2 style="font-size: 0.8em">[markdown] (from pdf)</h2>
+                <pre style="font-size: 0.6em; line-height: 1.2;">
+                    # Provenance:<br><br>
+
+                    <mark>Daniel Fourment</mark>, <mark>Antwerp</mark>, until June <mark>1643</mark>; ? Jean-Henry Gobelinus, Brussels, until July 16 81; Joan Baptista Anthoine, Antwerp, until March 16 91; Richard Mead, by 1724, until 1754; Fulk Greville, until 179 4; John Smith-Barry, Marbury Hall, Northwich, Cheshire, by 18 14; A.H, Smith-Barry; Lord Barrymore, sale, London (Sotheby’s), 21 June 19 33, lot 28 (repr.); Goudstikker, Amsterdam; presented by D.G. van Beuningen to the Museum, 1933.
+                </pre>
+            </div>
+            <div class="next">
+                <h2 style="font-size: 0.8em">[json]</h2>
+                <img src="./img/rub-18.png" width="120%">
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Iconography [pdf]</h2>
+        <figure>
+            <img src="./img/rub-24.png" width="100%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <div class="columns two">
+            <div>
+                <h2 style="font-size: 0.8em">[markdown] (from pdf)</h2>
                 <pre style="font-size: 0.5em; line-height: 1.2;">
                     <mark>Thetis</mark>, as a nymph herself immortal, knew that her son was vulnerable since he was the child of a mortal father, Peleus, king of the Myrmidons. She therefore attempted to make him immortal, according to some by treating him with fire, according to others by immersing him in the Styx, the river of the underworld. In the latter case she made him invulnerable except in the heel by which she held him, or according to other legends, except for the soles of his feet.
                     <br>    
                     Rubens has represented Thetis standing on the rocky border of the river, in the gloom of the underworld, “penchée sur le Styx où elle trampe galamment le petit héros quelle tient par le talon”. One of the three Fates (probably <mark>Lachesis</mark>, who assigns to man his doom), holding a distaff, assists Thetis by dispelling the darkness with a torch. In the background <mark>Charon</mark> conveys the dead across the Styx. Fiery flames emerge from behind the hills in the distance.
                 </pre>
             </div>
-            <div>
-                <h2 style="font-size: 0.8em">json</h2>
-                <img src="./img/rub-19.png" width="110%">
+            <div class="next">
+                <h2 style="font-size: 0.8em">[json]</h2>
+                <img src="./img/rub-19.png" width="120%">
             </div>
         </div>
+    </section>
+
+    <section class="slide">
+        <h2>Literature [pdf]</h2>
+        <figure>
+            <img src="./img/rub-25.png" width="100%">
+        </figure>
     </section>
 
     <section class="slide">
         <div class="columns two">
             <div>
-                <h2 style="font-size: 0.8em">markdown (from pdf)</h2>
+                <h2 style="font-size: 0.8em">[markdown] (from pdf)</h2>
                 <iframe src="./resources/achilles-series-bibliography-part-1.pdf" style="border: none;" allowFullScreen width="100%" height="50%"></iframe>
-                <pre style="font-size: 0.6em; line-height: 1.2;">
+                <pre style="font-size: 0.6em; line-height: 1.2;" class="next">
                     Smith, Catalogue Raisonné, il, pp. 250, 251, No. 849 (from the etchings by Ertinger and Baron); Van Hasselt, p. 290, No. 641; Hannema, 1933, p. 3, repr.; Pantheon, xi, 1933, p. 199; <mark>Burchard, 1930, pp. 13-15</mark>, No. 12;
                 </pre>
             </div>
-            <div>
-                <h2 style="font-size: 0.8em">json</h2>
+            <div class="next">
+                <h2 style="font-size: 0.8em">[json]</h2>
                 <img src="./img/rub-21.png" width="120%">
             </div>
         </div>
     </section>
-
-<!--
-    <section class="slide">
-        <h2>Provenances</h2>
-        <ul>
-            <li>extraction of structured data</li>
-            <li>JSON format</li>
-        </ul>
-        <figure>
-            <img class="cover width" src="./img/rub-4.png" alt="">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2><mark>Iconography</mark></h2>
-        <figure>
-            <img class="cover width" src="./img/rub-5.png" alt="">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Iconography</h2>
-        <ul>
-            <li>extraction of structured data</li>
-            <li>names, attributes, position</li>
-            <li>JSON format</li>
-        </ul>
-        <figure>
-            <img class="cover place right" src="./img/rub-6.png" alt="" width="60%">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2><mark>Literature</mark></h2>
-        <figure>
-            <img class="cover" src="./img/rub-2.png" alt="">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Literature</h2>
-        <ul>
-            <li>full bibliographic record<br>retrieved from the<br> 'Literature' section</li>
-            <li>extraction of structured data</li>
-            <li>JSON format</li>
-        </ul>
-        <figure>
-            <img class="cover place right" src="./img/rub-3.png" alt="">
-        </figure>
-    </section>
--->
 
 <!--
 #####
@@ -662,6 +631,21 @@ SECTION Slide - Valorizing results - First steps
     </section>
 
     <section class="slide">
+        <div class="columns two">
+            <div>
+                <h2 style="font-size: 0.8em">[markdown] (from pdf)</h2>
+                <pre style="font-size: 0.6em; line-height: 1.2;" class="next">
+                    Smith, Catalogue Raisonné, il, pp. 250, 251, No. 849 (from the etchings by Ertinger and Baron); Van Hasselt, p. 290, No. 641; Hannema, 1933, p. 3, repr.; Pantheon, xi, 1933, p. 199; <mark>Burchard, 1930, pp. 13-15</mark>, No. 12;
+                </pre>
+            </div>
+            <div class="next">
+                <h2 style="font-size: 0.8em">[json]</h2>
+                <img src="./img/rub-21.png" width="120%">
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
         <img class="cover height" src="./img/rub-26.png">
     </section>
 
@@ -670,7 +654,28 @@ SECTION Slide - Valorizing results - First steps
     </section>
 
     <section class="slide">
-        <h2>Data triggering research questions</h2>
+        <img class="cover height" src="./img/rub-31.png">
+    </section>
+
+    <section class="slide">
+        <h2 class="hsubsection">Triggering research questions</h2>
+    </section>
+
+    <section class="slide">
+        <div class="columns two">
+            <div>
+                <h2 style="font-size: 0.8em">[markdown] (from pdf)</h2>
+                <pre style="font-size: 0.6em; line-height: 1.2;">
+                    # Provenance:<br><br>
+
+                    <mark>Daniel Fourment</mark>, <mark>Antwerp</mark>, until June <mark>1643</mark>; ? Jean-Henry Gobelinus, Brussels, until July 16 81; Joan Baptista Anthoine, Antwerp, until March 16 91; Richard Mead, by 1724, until 1754; Fulk Greville, until 179 4; John Smith-Barry, Marbury Hall, Northwich, Cheshire, by 18 14; A.H, Smith-Barry; Lord Barrymore, sale, London (Sotheby’s), 21 June 19 33, lot 28 (repr.); Goudstikker, Amsterdam; presented by D.G. van Beuningen to the Museum, 1933.
+                </pre>
+            </div>
+            <div class="next">
+                <h2 style="font-size: 0.8em">[json]</h2>
+                <img src="./img/rub-18.png" width="120%">
+            </div>
+        </div>
     </section>
 
     <section class="slide">
@@ -695,12 +700,29 @@ SECTION Slide - Valorizing results - First steps
     </section>
 
     <section class="slide">
+        <div class="columns two">
+            <div>
+                <h2 style="font-size: 0.8em">[markdown] (from pdf)</h2>
+                <pre style="font-size: 0.5em; line-height: 1.2;">
+                    <mark>Thetis</mark>, as a nymph herself immortal, knew that her son was vulnerable since he was the child of a mortal father, Peleus, king of the Myrmidons. She therefore attempted to make him immortal, according to some by treating him with fire, according to others by immersing him in the Styx, the river of the underworld. In the latter case she made him invulnerable except in the heel by which she held him, or according to other legends, except for the soles of his feet.
+                    <br>    
+                    Rubens has represented Thetis standing on the rocky border of the river, in the gloom of the underworld, “penchée sur le Styx où elle trampe galamment le petit héros quelle tient par le talon”. One of the three Fates (probably <mark>Lachesis</mark>, who assigns to man his doom), holding a distaff, assists Thetis by dispelling the darkness with a torch. In the background <mark>Charon</mark> conveys the dead across the Styx. Fiery flames emerge from behind the hills in the distance.
+                </pre>
+            </div>
+            <div class="next">
+                <h2 style="font-size: 0.8em">[json]</h2>
+                <img src="./img/rub-19.png" width="120%">
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
         <h2>Object detection</h2>
         <img src="./img/rub-28.png" width="90%">
         <div id="dino" class="overbox next">
                 <h2 style="font-size: 0.9em;">Input</h2>
                 <p>
-                    Recognize "Cerberus, the three-headed watchdog of the underworld, depicted with one head sleeping, one watching, and one barking."
+                    Detect <strong>"Cerberus, the three-headed watchdog of the underworld, depicted with one head sleeping, one watching, and one barking."</strong>
                 </p>
                 <h2 style="font-size: 0.9em;">Output</h2>
                 <p>
@@ -719,24 +741,140 @@ SECTION Slide - Valorizing results - First steps
     </section>
 
     <section class="slide">
-        <h2 style="margin-top: -80px; line-height: 1.0;">Object Detection<br>with Multimodal LLM</h2>
-        <figure>
-            <img class="cover width" src="./img/rub-8.png" alt="">
+        <h2>Object Detection with Grounding DINO</h2>
+        <p><strong><mark>Grounding DINO</mark></strong> is an
+        <ul>
+            <li><strong>open-set detector</strong> DINO with pre-training
+            <li>which can <strong>detect arbitrary objects</strong></li>
+            <li>with <strong>human inputs</strong> such as category names or referring expressions</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Object Detection with Grounding DINO</h2>
+        <div>
+                <div style="overflow:auto;width:auto;padding:.2em .6em; font-size: 0.6em;">
+                  <pre style="margin: 0; line-height: 1.5">
+                        <span style="color: #008000; font-weight: bold">import</span>
+                        <span style="color: #0000FF; font-weight: bold">requests</span><br>
+                        <span style="color: #008000; font-weight: bold">import</span>
+                        <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span>
+                        <span style="color: #008000; font-weight: bold">as</span>
+                        <span style="color: #0000FF; font-weight: bold">plt</span><br>
+                        <span style="color: #008000; font-weight: bold">import</span>
+                        <span style="color: #0000FF; font-weight: bold">torch</span><br>
+                        <span style="color: #008000; font-weight: bold">from</span>
+                        <span style="color: #0000FF; font-weight: bold">PIL</span>
+                        <span style="color: #008000; font-weight: bold">import</span> Image
+<br>
+                        <span style="color: #008000; font-weight: bold">from</span>
+                        <span style="color: #0000FF; font-weight: bold">transformers</span><br>
+                        <span style="color: #008000; font-weight: bold">import</span> AutoProcessor, AutoModelForZeroShotObjectDetection <br>
+
+                model_id 
+                        <span style="color: #666666">=</span>
+                        <span style="color: #BA2121"><mark>&quot;IDEA-Research/grounding-dino-base&quot;</mark></span><br>
+                device 
+                        <span style="color: #666666">=</span>
+                        <span style="color: #BA2121">&quot;cuda&quot;</span>
+                        <span style="color: #008000; font-weight: bold">if</span> torch
+                        <span style="color: #666666">.</span>cuda
+                        <span style="color: #666666">.</span>is_available() 
+                        <span style="color: #008000; font-weight: bold">else</span>
+                        <span style="color: #BA2121">&quot;cpu&quot;</span><br>
+
+                processor 
+                        <span style="color: #666666">=</span> AutoProcessor
+                        <span style="color: #666666">.</span>from_pretrained(model_id)<br>
+                model 
+                        <span style="color: #666666">=</span> AutoModelForZeroShotObjectDetection
+                        <span style="color: #666666">.</span>from_pretrained(model_id)
+                        <span style="color: #666666">.</span>to(device)<br>
+
+                image_path 
+                        <span style="color: #666666">=</span>
+                        <span style="color: #BA2121">&quot;./data/RUB000077.jpg&quot;</span><br>
+                image 
+                        <span style="color: #666666">=</span> Image
+                        <span style="color: #666666">.</span>open(image_path)<br>
+
+                text_labels 
+                        <span style="color: #666666">=</span> [[
+                        <span style="color: #BA2121"><mark>&quot;Thetis holding her son by the heel&quot;</mark></span>]]<br>
+
+                inputs 
+                        <span style="color: #666666">=</span> processor(images
+                        <span style="color: #666666">=</span>image, text
+                        <span style="color: #666666">=</span>text_labels, return_tensors
+                        <span style="color: #666666">=</span>
+                        <span style="color: #BA2121">&quot;pt&quot;</span>)
+                        <span style="color: #666666">.</span>to(device)
+
+                        <span style="color: #008000; font-weight: bold">with</span> torch
+                        <span style="color: #666666">.</span>no_grad():<br>
+                    <span class="tab">outputs</span> 
+                        <span style="color: #666666">=</span> model(
+                        <span style="color: #666666">**</span>inputs)
+
+                    </pre>
+                </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Object Detection</h2>
+        <div class="columns two">
+            <div>
+                <ul style="line-height: 1.4;">
+                    <li>
+                        Detect: <pre>"Thetis holding her son by the heel"</pre>
+                    </li>
+                    <li>
+                        Output: <pre>[796.0021,  945.3968, 1648.9211, 1770.9219]</pre>
+                    </li>
+                </ul>
+            </div>
+            <div>
+            </div>
+        </div>
+        <figure class="next">
+            <img class="cover place right" src="./img/rub-32.png" width="50%">
         </figure>
     </section>
 
     <section class="slide">
-        <h2 style="margin-top: -50px;">Object Detection<br>with Multimodal LLM</h2>
+        <h2>Object Detection</h2>
+        <div class="columns two">
+            <div>
+                <ul style="line-height: 1.4;">
+                    <li>
+                        Detect: <pre>"Cerberus the watch dog of the underworld is depicted with three heads"</pre>
+                    </li>
+                    <li>
+                        Output: <pre>[469.6664, 2038.6587, 1635.0173, 2363.8044]</pre>
+                    </li>
+                </ul>
+            </div>
+            <div>
+            </div>
+        </div>
+        <figure class="next" style="margin-left: -100px;">
+            <img class="cover place right" src="./img/rub-33.png" width="50%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="margin-top: -50px;">Object Detection</h2>
         <div columns="two">
             <div>
-                <p><strong>Next steps:</strong></p>
+                <p><strong>Opportunities:</strong></p>
                 <ul>
                     <li>image maps</li>
                     <li>AR application</li>
                 </ul>
             </div>
             <figure>
-                <img class="cover height place right" src="./img/RUB000077.jpg" alt="">
+                <img class="cover height place right" src="./img/rub-0.jpg" alt="">
                 <div id="thetis">
                     <div class="hidden-element"><strong>Cerberus</strong>, the watchdog of the underworld, is depicted with three heads: one sleeping, one watching, and the third barking.</div>
                 <div>
@@ -745,13 +883,14 @@ SECTION Slide - Valorizing results - First steps
         <style type="text/css">
         #thetis {
             position: absolute;
-            bottom: -100px;
+            bottom: -80px;
             left: 650px;
             width: 300px;
             height: 200px;
         }
         .hidden-element {
             display: none;
+            padding: 10px;
             color: black;
             background: rgba(239, 239, 239, 0.6);
             font-size: 0.6em;
@@ -763,8 +902,8 @@ SECTION Slide - Valorizing results - First steps
         </style>    
     </section>
 
-    <section class="slide" id="cover" style="background-color: darkcyan;">
-        <h2>Valorizing results - Next steps</h2>
+    <section class="slide">
+        <h2 class="hsubsection">Next steps</h2>
         <p style="font-size: 1.8em;"></p>
         <figure>
         </figure>
@@ -788,11 +927,26 @@ SECTION Slide - Valorizing results - First steps
     </section>
 
     <section class="slide">
-        <h2 style="margin-top: -50px;">Valorizing results - Next steps</h2>
+        <h2>Next steps</h2>
         <ul>
-            <li><mark>full parsing</mark> <i>Corpus Rubenianum</i> in close cooperation with Centrum Rubenianum staff</li>
-            <li>investigating <mark>valorization</mark> options: timeline, network graph, keyword extraction</li>
-            <li>testing and fine-tuning <mark>object detection</mark> using parsed structured iconographic data</li>
+            <li><mark><strong>full parsing</strong></mark> <i>Corpus Rubenianum</i> in close cooperation with Centrum Rubenianum staff</li>
+            <li>investigating <mark><strong>data valorization</strong></mark> options: timeline, geomapping, network graph</li>
+            <li>testing and fine-tuning <mark><strong>object detection</strong></mark> opportunities using parsed structured iconographic data</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>The Project</h2>
+        <ul>
+            <li>
+                Rubenshuis Antwerp (https://rubenshuis.be/)
+            </li>
+            <li>
+                Digital Humanities @ KU Leuven
+            </li>
+            <li>
+                ./datable (https://www.datable.be/)
+            </li>
         </ul>
     </section>
 

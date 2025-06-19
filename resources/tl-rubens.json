@@ -1,7 +1,7 @@
 {
   "title": {
     "media": {
-      "url": "../img/RUB000077.jpg"
+      "url": "../img/rub-0.jpg"
     },
     "text": {
       "headline": "Achilles Dipped into the River Styx",
@@ -20,6 +20,9 @@
         "headline": "Achilles Dipped into the River Styx (Oil Sketch)",
         "text": "Daniel Fourment (Antwerp)"
       },
+      "media": {
+        "url": "../img/rub-11.jpg"
+      },
       "group": "Oil Sketch"
     },
     {
@@ -32,6 +35,9 @@
       "text": {
         "headline": "Achilles Dipped into the River Styx (Oil Sketch)",
         "text": "Jean-Henry Gobelinus (Brussels)"
+      },
+      "media": {
+        "url": "../img/rub-11.jpg"
       },
       "group": "Oil Sketch"
     },
@@ -46,6 +52,9 @@
         "headline": "Achilles Dipped into the River Styx (Oil Sketch)",
         "text": "Joan Baptista Anthoine (Antwerp)"
       },
+      "media": {
+        "url": "../img/rub-11.jpg"
+      },
       "group": "Oil Sketch"
     },
     {
@@ -58,6 +67,9 @@
       "text": {
         "headline": "Achilles Dipped into the River Styx (Oil Sketch)",
         "text": "Richard Mead (n/a)"
+      },
+      "media": {
+        "url": "../img/rub-11.jpg"
       },
       "group": "Oil Sketch"
     },
@@ -72,6 +84,9 @@
         "headline": "Achilles Dipped into the River Styx (Oil Sketch)",
         "text": "Fulk Greville (n/a)"
       },
+        "media": {
+        "url": "../img/rub-11.jpg"
+      },
       "group": "Oil Sketch"
     },
     {
@@ -84,6 +99,9 @@
       "text": {
         "headline": "Achilles Dipped into the River Styx (Oil Sketch)",
         "text": "John Smith-Barry (Marbury Hall, Northwich, Cheshire)"
+      },
+        "media": {
+        "url": "../img/rub-11.jpg"
       },
       "group": "Oil Sketch"
     },
@@ -98,6 +116,9 @@
         "headline": "Achilles Dipped into the River Styx (Oil Sketch)",
         "text": "Lord Barrymore (London)"
       },
+      "media": {
+        "url": "../img/rub-11.jpg"
+      },
       "group": "Oil Sketch"
     },
     {
@@ -110,6 +131,9 @@
       "text": {
         "headline": "Achilles Dipped into the River Styx (Oil Sketch)",
         "text": "D.G. van Beuningen (Rotterdam)"
+      },
+      "media": {
+        "url": "../img/rub-11.jpg"
       },
       "group": "Oil Sketch"
     },
@@ -124,6 +148,9 @@
         "headline": "Achilles Dipped into the River Styx (Modello)",
         "text": "Daniel Fourment (Antwerp)"
       },
+        "media": {
+        "url": "../img/rub-10.jpg"
+      },
       "group": "Modello"
     },
     {
@@ -136,6 +163,9 @@
       "text": {
         "headline": "Achilles Dipped into the River Styx (Modello)",
         "text": "Peter Fourment (Antwerp)"
+      },
+          "media": {
+        "url": "../img/rub-10.jpg"
       },
       "group": "Modello"
     },
@@ -150,6 +180,9 @@
         "headline": "Achilles Dipped into the River Styx (Modello)",
         "text": "Duke of Paftrana (Madrid)"
       },
+          "media": {
+        "url": "../img/rub-10.jpg"
+      },
       "group": "Modello"
     },
     {
@@ -162,6 +195,9 @@
       "text": {
         "headline": "Achilles Dipped into the River Styx (Modello)",
         "text": "Comunidad de las Religiosas del Sagrado Corazón de Jesus (Madrid)"
+      },
+          "media": {
+        "url": "../img/rub-10.jpg"
       },
       "group": "Modello"
     },
@@ -176,6 +212,9 @@
         "headline": "Achilles Dipped into the River Styx (Modello)",
         "text": "Emile Pacully (Paris)"
       },
+      "media": {
+        "url": "../img/rub-10.jpg"
+      },
       "group": "Modello"
     },
     {
@@ -189,6 +228,9 @@
         "headline": "Achilles Dipped into the River Styx (Modello)",
         "text": "John E. Stillwell (New York)"
       },
+      "media": {
+        "url": "../img/rub-10.jpg"
+      },
       "group": "Modello"
     },
     {
@@ -201,6 +243,9 @@
       "text": {
         "headline": "Achilles Dipped into the River Styx (Modello)",
         "text": "Ringling (Sarasota, Florida)"
+      },
+      "media": {
+        "url": "../img/rub-10.jpg"
       },
       "group": "Modello"
     },
