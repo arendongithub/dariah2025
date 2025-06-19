@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>TimelineJS</title>
+      <meta charset="utf-8">
+      <meta name="description" content="TimelineJS Embed">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-touch-fullscreen" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <!-- FAVICONS -->
+      <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.knightlab.com/libs/orangeline/latest/assets/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="https://cdn.knightlab.com/libs/orangeline/latest/assets/favicons/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="https://cdn.knightlab.com/libs/orangeline/latest/assets/favicons/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="https://cdn.knightlab.com/libs/orangeline/latest/assets/favicons/manifest.json">
+      <link rel="mask-icon" href="https://cdn.knightlab.com/libs/orangeline/latest/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+      <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+      <link title="timeline-styles" rel="stylesheet" 
+              href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+      <!-- Google Analytics should be handled by Timeline -->
+
+      <base target="_blank">
+
+      <!-- Style-->
+      <style>
+          html,
+          body {
+              width: 100%;
+              height: 100%;
+              padding: 0px;
+              margin: 0px;
+          }
+          
+          #timeline-embed {
+              height: 100%;
+          }
+          .tl-headline-date {
+            color: red !important;
+          }
+          .tl-timeaxis {
+            height: 100px;
+          }
+          .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick {
+            font-size: 1.5em;
+            line-height: 25px;
+          }
+      </style>
+  </head>
+
+  <body>
+    <!-- BEGIN Timeline Embed -->
+    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+    <!-- END Timeline Embed -->
+    <script type="text/javascript">
+      var timeline_json = './tl-rubens.json'; 
+      window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+    </script>
+  </body>
+
+</html>
